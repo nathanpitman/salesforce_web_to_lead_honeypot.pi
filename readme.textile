@@ -4,12 +4,16 @@ The SalesForce.com web to lead honeypot plug-in catches a web to lead style form
 	
 Implementation is simple, add the following tag to the head of the page where your web to lead form resides:
 
-	<pre><code>{exp:salesforce_web_to_lead_honeypot field_name="honeypot"}</pre></code>
+	<code>
+	{exp:salesforce_web_to_lead_honeypot field_name="honeypot"}
+	</code>
 
 Now remove the 'action' parameter from your web to lead form and add a new text field (you should hide this with CSS), i.e.
 	
-	<pre><code><form method="post">
-	<input type="text" name="honeypot" value=""></pre></code>
+	<code>
+	<form method="post">
+	<input type="text" name="honeypot" value="">
+	</code>
 
 *Parameters:*
 	
